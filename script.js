@@ -22,6 +22,6 @@ for (let btnModal of btnsOpenModal) {
 
 document.addEventListener("keydown", function (e) {
   if (e.key === "Escape") {
-    closeModalFn();
+    if (!modal.classList.contains("hidden")) closeModalFn();
   }
 });
